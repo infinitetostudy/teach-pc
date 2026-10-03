@@ -78,6 +78,8 @@ npm run build
 
 缺页演示会打开一个最小 Sv32 页表。访问未映射地址时，机器停在那一拍，原理页能看到失败的页表项。
 
-## 发布
+## 在线使用
 
-推送到 `main` 后，GitHub Actions 会把站点发布到 GitHub Pages，地址是 `https://<用户名>.github.io/teach-pc/`。构建时资源前缀是 `/teach-pc/`。如果仓库名改了，要同时改 [`.github/workflows/pages.yml`](.github/workflows/pages.yml) 里的 `VITE_BASE`。
+站点发布在 GitHub Pages：https://infinitetostudy.github.io/teach-pc/
+
+构建时资源前缀是 `/teach-pc/`。本地 `npm run dev` 和 `npm run build` 不需要这个前缀。
